@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Track Service Requests</title>
+</head>
+<body>
+    <h2>Track Service Requests</h2>
+    <ul>
+        {% for request in requests %}
+            <li>{{ request.service_type }} - {{ request.status }} (Submitted: {{ request.created_at }})</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
